@@ -2,7 +2,7 @@
 {% assign string = string_list | split: ',' %}
 <ul>
   {% for name in string %}
-  {% if name == 'Szobo' %} 
+  {% if name.size < 6 %} 
   <li>{{ name }}</li>
   {% endif %}
   {% endfor %}
