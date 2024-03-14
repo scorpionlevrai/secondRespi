@@ -2,6 +2,8 @@
 {% assign string = string_list | split: ',' %}
 <ul>
   {% for name in string %}
+  {% if name == 'Szobo' %} 
+  {% endif %}
     <li>{{ name }}</li>
   {% endfor %}
 </ul>
