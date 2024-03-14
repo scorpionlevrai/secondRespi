@@ -1,0 +1,7 @@
+{% assign string_list = 'Wataru, Szobo, Macca, Ryan, Curtis' %}
+{% assign string = string_list | split ',' %}
+<ul>
+  {% for name in string %}
+    <li>{{ name }}</li>
+  {% endfor %}
+</ul>
