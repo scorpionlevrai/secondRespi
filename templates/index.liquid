@@ -1,9 +1,7 @@
-{% assign collection = all_products %}
+{% assign collection = collections['Available products'] %}
 {{ collection.title }}
 <ul>
     {% for product in collection.products %}
-<li>
-  {{ product }}  
-</li>
+<li> {{ product }}  </li>
     {% endfor %}
 </ul>
