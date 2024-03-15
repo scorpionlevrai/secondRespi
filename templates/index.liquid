@@ -1,2 +1,5 @@
 {% assign collection = all_products %}
-{{ collection }}
+{{ collection.title }}
+{% for collection in collections['Available products'] %}
+{{ collection }}  
+{% endfor %}
