@@ -3,7 +3,10 @@
 <ul>
     {% for product in collection.products %}
     <a href="{{ product.url }}">
-    <li> {{ product.title }} - {{ product.price | money }} - {{ product.available }}</li>
+    <li> {{ product.title }} - {{ product.price | money }} </li>
+    {% if product.available != true %}
+        {{ 'SOLD OUT!' }}
+    {% endif %}
     </a>
     {% endfor %}
 </ul>
