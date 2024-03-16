@@ -2,11 +2,12 @@
 {{ collection.title }}
 <ul>
     {% for product in collection.products %}
-    <a href="{{ product.url }}">
-    <li> {{ product.title }} - {{ product.price | money }} </li>
+    <li>
+    <a style="color: {{ settings.link_color }}" href="{{ product.url }}"> {{ product.title }} - {{ product.price | money }}
     {% unless product.available != false %}
         (SOLD OUT!)
     {% endunless %}
     </a>
+    </li>
     {% endfor %}
 </ul>
