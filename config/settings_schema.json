@@ -14,7 +14,8 @@
     "type": "color",    
     "id": "link_color",
     "label": "Link color",
-    "default": #000
+    "default": "#000"
       }
+    ]
   }
 ]
