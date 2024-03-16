@@ -5,7 +5,7 @@
     <a href="{{ product.url }}">
     <li> {{ product.title }} - {{ product.price | money }} </li>
     {% if product.available != true %}
-        {{ 'SOLD OUT!' }}
+        ('SOLD OUT!')
     {% endif %}
     </a>
     {% endfor %}
